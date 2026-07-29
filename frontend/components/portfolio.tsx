@@ -94,10 +94,10 @@ export function Portfolio({ data }: { data: PortfolioData }) {
                   ["Gêmeos digitais", data.featuredResearch.digitalTwins],
                   ["P&D e inovação", data.featuredResearch.research],
                 ].map(([title, body]) => <Reveal key={title}><article className="h-full rounded-3xl border border-white/10 bg-white/5 p-6"><h3 className="font-semibold text-beige">{title}</h3><p className="mt-3 leading-7 text-[#F3E9DC]/75">{body}</p></article></Reveal>)}
-                <Reveal className="sm:col-span-2">
+                <Reveal>
                   <article className="h-full rounded-3xl bg-olive p-6">
                     <h3 className="font-semibold text-white">Minha participação</h3>
-                    <ul className="mt-4 grid gap-2 sm:grid-cols-2">
+                    <ul className="mt-4 grid gap-2">
                       {data.featuredResearch.participation.map((item) => (
                         <li key={item} className="flex items-center gap-2 rounded-xl bg-black/10 px-3 py-2.5 text-sm font-medium text-white">
                           <Search aria-hidden="true" size={16} className="shrink-0 text-[#E8DDCD]" />{item}
