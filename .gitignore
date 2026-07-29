@@ -22,6 +22,7 @@ backend/instance/
 .vscode/
 .DS_Store
 Thumbs.db
+*:Zone.Identifier
 
 # Coverage and build artifacts
 coverage/

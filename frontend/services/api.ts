@@ -6,7 +6,7 @@ const serverApiUrl = process.env.INTERNAL_API_URL ?? publicApiUrl;
 
 async function getResource<T>(resource: string): Promise<T> {
   const response = await fetch(`${serverApiUrl}/${resource}`, {
-    next: { revalidate: 60 },
+    cache: "force-cache",
   });
   if (!response.ok) throw new Error(`Falha ao carregar ${resource}.`);
   const payload = (await response.json()) as ApiResponse<T>;

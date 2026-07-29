@@ -179,6 +179,10 @@ Em produção, configure HTTPS, URL pública da API, CORS restrito ao domínio f
 
 Novos commits na branch `main` passam a disparar deploys automáticos nas duas plataformas.
 
+### Deploy do front-end no GitHub Pages
+
+O workflow `.github/workflows/deploy-pages.yml` exporta o Next.js como site estático e publica em `https://israelgoncalvesx.github.io/portfolio/`. No GitHub, abra **Settings → Pages** e selecione **GitHub Actions** em **Source**. A API permanece hospedada no Render.
+
 ## Checklist antes de publicar
 
 - [ ] Substituir o PDF provisório pelo currículo final

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { ThemeProvider } from "@/components/theme-provider";
+import { withBasePath } from "@/lib/paths";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -11,9 +12,9 @@ export const metadata: Metadata = {
     description: "Projetos, pesquisa e trajetória em Engenharia da Computação, dados e inteligência artificial.",
     type: "website",
     locale: "pt_BR",
-    images: [{ url: "/opengraph-image.svg", width: 1200, height: 630, alt: "Portfólio de Israel Gonçalves" }],
+    images: [{ url: withBasePath("/opengraph-image.svg"), width: 1200, height: 630, alt: "Portfólio de Israel Gonçalves" }],
   },
-  icons: { icon: "/favicon.svg" },
+  icons: { icon: withBasePath("/favicon.svg") },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

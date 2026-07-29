@@ -2,6 +2,7 @@
 
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowDown, ArrowUpRight, Download, Github, Linkedin, MapPin } from "lucide-react";
+import { withBasePath } from "@/lib/paths";
 import type { Profile, SocialLink } from "@/types/portfolio";
 
 export function Hero({ profile, socials }: { profile: Profile; socials: SocialLink[] }) {
@@ -27,7 +28,7 @@ export function Hero({ profile, socials }: { profile: Profile; socials: SocialLi
             <motion.a whileHover={reduced ? {} : { scale: 1.025 }} whileTap={reduced ? {} : { scale: .98 }} href="#projetos" className="button button-primary group">
               Ver projetos <ArrowUpRight className="transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" size={19} />
             </motion.a>
-            <motion.a whileHover={reduced ? {} : { scale: 1.025 }} href="/curriculo-israel-goncalves.pdf" download className="button button-secondary">
+            <motion.a whileHover={reduced ? {} : { scale: 1.025 }} href={withBasePath("/curriculo-israel-goncalves.pdf")} download className="button button-secondary">
               <Download size={18} /> Baixar currículo
             </motion.a>
             <a href={github} target="_blank" rel="noopener noreferrer" className="icon-button" aria-label="Abrir GitHub em nova aba"><Github /></a>

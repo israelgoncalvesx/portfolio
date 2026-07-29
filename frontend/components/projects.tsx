@@ -4,6 +4,7 @@ import { motion, useReducedMotion } from "framer-motion";
 import { ArrowUpRight, Github, LockKeyhole } from "lucide-react";
 import Image from "next/image";
 import { useMemo, useState } from "react";
+import { withBasePath } from "@/lib/paths";
 import type { Project } from "@/types/portfolio";
 import { Reveal, SectionTitle } from "./ui";
 
@@ -31,7 +32,7 @@ export function Projects({ projects, githubUrl }: { projects: Project[]; githubU
             <Reveal key={project.id}>
               <motion.article layout whileHover={reduced ? {} : { y: -5 }} className="group overflow-hidden rounded-[2rem] border border-line/70 bg-card shadow-sm transition-shadow hover:border-olive/40 hover:shadow-soft">
                 <div className="relative aspect-[16/9] overflow-hidden bg-beige/30">
-                  <Image src={project.image} alt="" fill className="object-cover transition duration-500 group-hover:scale-[1.02]" />
+                  <Image src={withBasePath(project.image)} alt="" fill className="object-cover transition duration-500 group-hover:scale-[1.02]" />
                   <span className="absolute left-4 top-4 rounded-full bg-sand/90 px-3 py-1.5 text-xs font-bold text-coffee backdrop-blur">{project.category}</span>
                 </div>
                 <div className="p-6 sm:p-8">
