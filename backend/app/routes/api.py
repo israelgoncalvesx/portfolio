@@ -3,6 +3,7 @@ from flask import Blueprint, current_app, jsonify, request
 from ..schemas.contact import validate_contact
 from ..services.content_service import ContentService
 from ..services.contact_service import ContactService
+from ..services.email_service import EmailService
 
 api = Blueprint("api", __name__)
 
@@ -63,6 +64,26 @@ def contact():
 
     if cleaned.pop("website", ""):
         return response({"message": "Mensagem recebida. Obrigado!"}, status=201)
+
+    try:
+        EmailService.send_contact(
+            cleaned,
+            api_key=current_app.config["RESEND_API_KEY"],
+            from_email=current_app.config["RESEND_FROM_EMAIL"],
+            to_email=current_app.config["CONTACT_TO_EMAIL"],
+        )
+    except ValueError:
+        current_app.logger.error("Resend não está configurado.")
+        return response(
+            error="O envio de mensagens está temporariamente indisponível.",
+            status=503,
+        )
+    except Exception:
+        current_app.logger.exception("Falha ao enviar mensagem pelo Resend.")
+        return response(
+            error="Não foi possível enviar a mensagem. Tente novamente mais tarde.",
+            status=502,
+        )
 
     ContactService.save(cleaned, current_app.config["CONTACT_LOG_PATH"])
     return response(

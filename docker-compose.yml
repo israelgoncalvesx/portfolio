@@ -4,6 +4,9 @@ services:
     environment:
       CORS_ORIGINS: http://localhost:3000
       CONTACT_LOG_PATH: /app/instance/contact_messages.jsonl
+      CONTACT_TO_EMAIL: ${CONTACT_TO_EMAIL:-israelgoncalvesx@gmail.com}
+      RESEND_API_KEY: ${RESEND_API_KEY}
+      RESEND_FROM_EMAIL: ${RESEND_FROM_EMAIL:-Portfolio <onboarding@resend.dev>}
     volumes:
       - contact_data:/app/instance
     ports:

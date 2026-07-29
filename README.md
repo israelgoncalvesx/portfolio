@@ -126,6 +126,9 @@ Back-end (`backend/.env` ou ambiente):
 | `FLASK_DEBUG` | Ativa debug somente em desenvolvimento |
 | `CORS_ORIGINS` | Origens permitidas, separadas por vírgula |
 | `CONTACT_LOG_PATH` | Arquivo JSONL das mensagens recebidas |
+| `CONTACT_TO_EMAIL` | Endereço que recebe as mensagens do formulário |
+| `RESEND_API_KEY` | Chave de API do Resend; mantenha somente no ambiente |
+| `RESEND_FROM_EMAIL` | Remetente em um domínio verificado no Resend |
 
 Nenhuma variável secreta deve começar com `NEXT_PUBLIC_`.
 
@@ -143,7 +146,7 @@ Todos os endpoints respondem com `{ "success", "data", "error" }`.
 - `POST /api/contact`
 - `GET /api/health`
 
-O formulário valida os campos nos dois lados, limita a mensagem a 2.000 caracteres e usa um honeypot simples. Ele apenas registra mensagens em JSONL; não envia e-mails.
+O formulário valida os campos nos dois lados, limita a mensagem a 2.000 caracteres e usa um honeypot simples. As mensagens são enviadas por e-mail com o Resend e, após o envio, também registradas em JSONL como cópia local. Para produção, crie uma chave com permissão de envio, verifique seu domínio no Resend e configure `RESEND_API_KEY` e `RESEND_FROM_EMAIL`.
 
 ## Verificações
 
