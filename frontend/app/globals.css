@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --coffee: 59 47 47;
+  --earth: 107 79 58;
+  --terracotta: 181 101 77;
+  --beige: 216 195 165;
+  --sand: 243 233 220;
+  --olive: 102 115 79;
+  --ink: 36 33 31;
+  --card: 250 246 240;
+  --line: 210 190 164;
+}
+.dark {
+  color-scheme: dark;
+  --coffee: 232 221 205;
+  --earth: 191 178 161;
+  --terracotta: 199 120 93;
+  --beige: 191 178 161;
+  --sand: 23 21 18;
+  --olive: 156 171 115;
+  --ink: 232 221 205;
+  --card: 43 39 33;
+  --line: 75 68 58;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+body { margin: 0; background: rgb(var(--sand)); color: rgb(var(--ink)); font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; transition: background-color .3s ease, color .3s ease; }
+::selection { background: rgb(var(--olive)); color: rgb(var(--sand)); }
+a, button, input, textarea { -webkit-tap-highlight-color: transparent; }
+:focus-visible { outline: 2px solid rgb(var(--olive)); outline-offset: 3px; }
+
+@layer components {
+  .section { @apply px-5 py-24 sm:px-8 sm:py-32; }
+  .eyebrow { @apply text-xs font-bold uppercase tracking-[.2em] text-olive; }
+  .button { @apply inline-flex min-h-12 items-center justify-center gap-2 rounded-xl px-6 py-3 font-semibold transition duration-200; }
+  .button-primary { @apply bg-terracotta text-white shadow-lg shadow-terracotta/20 hover:bg-olive active:scale-[.98]; }
+  .button-secondary { @apply border border-coffee/20 bg-transparent text-coffee hover:border-olive hover:bg-olive hover:text-sand active:scale-[.98]; }
+  .icon-button { @apply grid h-12 w-12 place-items-center rounded-xl border border-coffee/20 text-coffee transition hover:border-olive hover:bg-olive hover:text-sand active:scale-95; }
+  .nav-link { @apply rounded-md text-sm font-semibold text-earth transition hover:text-olive focus-visible:text-olive; }
+  .badge { @apply rounded-full border border-olive/25 bg-olive/10 px-3 py-1.5 text-xs font-semibold text-earth transition hover:border-olive/50; }
+  .text-link { @apply inline-flex items-center gap-1 text-sm font-bold text-terracotta hover:text-olive; }
+  .field { @apply flex flex-col gap-2 text-sm font-semibold text-coffee; }
+  .field input, .field textarea { @apply w-full rounded-xl border border-line bg-card px-4 py-3 font-normal text-ink outline-none transition placeholder:text-earth/50 focus:border-olive focus:ring-2 focus:ring-olive/20; }
+  .theme-toggle { @apply inline-flex shrink-0 items-center justify-center gap-2 rounded-xl border border-olive/40 bg-olive/10 text-olive transition duration-200 hover:border-olive hover:bg-olive hover:text-sand active:scale-95; }
+}
+.font-serif { font-family: Georgia, "Times New Roman", serif; }
+.noise { position:absolute; inset:0; opacity:.035; pointer-events:none; background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E"); }
+#contato .eyebrow { color:rgb(var(--olive)); }
+#contato h2 { color:rgb(var(--coffee)); }
+#contato .max-w-2xl { color:rgb(var(--earth)); }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}

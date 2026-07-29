@@ -1,0 +1,58 @@
+[
+  {
+    "id": "titanic-eda",
+    "name": "Análise Exploratória do Titanic",
+    "summary": "Espaço reservado para uma análise exploratória do conjunto de dados Titanic. Substitua esta descrição pelas decisões, perguntas e descobertas reais do projeto.",
+    "technologies": ["Python", "Pandas", "Matplotlib"],
+    "image": "/projects/placeholder-data.svg",
+    "category": "Ciência de Dados",
+    "repositoryUrl": null,
+    "demoUrl": null,
+    "status": "Conteúdo de exemplo",
+    "highlights": ["Preparado para documentar limpeza de dados", "Espaço para registrar visualizações e conclusões"],
+    "period": "A definir",
+    "placeholder": true
+  },
+  {
+    "id": "campo-escola-digital",
+    "name": "Campo Escola Digital",
+    "summary": "Projeto acadêmico de ecossistema digital para aprendizagem e inovação na indústria de óleo e gás, com ambientes virtuais, dados, simulações e gêmeos digitais.",
+    "technologies": ["Unity", "C#", "Python", "Visualização de dados"],
+    "image": "/projects/placeholder-twin.svg",
+    "category": "Gêmeos Digitais",
+    "repositoryUrl": null,
+    "demoUrl": null,
+    "status": "Em andamento",
+    "highlights": ["Ambientes virtuais no Unity", "Análise de dados públicos da ANP", "Pesquisa em gêmeos digitais"],
+    "period": "2026 — em andamento",
+    "placeholder": true
+  },
+  {
+    "id": "machine-learning",
+    "name": "Projeto de Machine Learning",
+    "summary": "Placeholder para um futuro projeto de aprendizado de máquina. Inclua aqui o problema, a metodologia e resultados verificáveis quando o repositório estiver disponível.",
+    "technologies": ["Python", "Scikit-learn", "Pandas"],
+    "image": "/projects/placeholder-ml.svg",
+    "category": "Machine Learning",
+    "repositoryUrl": null,
+    "demoUrl": null,
+    "status": "Conteúdo de exemplo",
+    "highlights": ["Estrutura pronta para métricas reais", "Espaço para explicar preparação e validação"],
+    "period": "A definir",
+    "placeholder": true
+  },
+  {
+    "id": "flask-data-api",
+    "name": "API Flask para análise de dados",
+    "summary": "Placeholder para uma API de análise de dados com Flask. Atualize com endpoints e funcionalidades reais após a implementação.",
+    "technologies": ["Python", "Flask", "Docker"],
+    "image": "/projects/placeholder-api.svg",
+    "category": "Back-end",
+    "repositoryUrl": null,
+    "demoUrl": null,
+    "status": "Conteúdo de exemplo",
+    "highlights": ["Arquitetura REST a documentar", "Preparado para testes e containerização"],
+    "period": "A definir",
+    "placeholder": true
+  }
+]

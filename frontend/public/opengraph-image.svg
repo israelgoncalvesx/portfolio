@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#F3E9DC"/>
+  <circle cx="1020" cy="120" r="250" fill="#D8C3A5" opacity=".45"/>
+  <circle cx="1040" cy="380" r="170" fill="#3B2F2F"/>
+  <path d="M900 300L1040 380L1130 220M1040 380L1110 490" stroke="#B5654D" stroke-width="4" stroke-dasharray="10 12"/>
+  <circle cx="900" cy="300" r="12" fill="#66734F"/><circle cx="1130" cy="220" r="12" fill="#B5654D"/><circle cx="1110" cy="490" r="12" fill="#D8C3A5"/>
+  <text x="90" y="245" fill="#B5654D" font-family="Arial,sans-serif" font-size="24" font-weight="700" letter-spacing="5">PORTFÓLIO</text>
+  <text x="90" y="335" fill="#3B2F2F" font-family="Arial,sans-serif" font-size="68" font-weight="700">Israel Gonçalves</text>
+  <text x="90" y="400" fill="#6B4F3A" font-family="Arial,sans-serif" font-size="30">Dados · Machine Learning · Inteligência Artificial</text>
+</svg>

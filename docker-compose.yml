@@ -1,0 +1,32 @@
+services:
+  backend:
+    build: ./backend
+    environment:
+      CORS_ORIGINS: http://localhost:3000
+      CONTACT_LOG_PATH: /app/instance/contact_messages.jsonl
+    volumes:
+      - contact_data:/app/instance
+    ports:
+      - "5000:5000"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:5000/api/health')"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        NEXT_PUBLIC_API_URL: http://localhost:5000/api
+    environment:
+      INTERNAL_API_URL: http://backend:5000/api
+      NEXT_PUBLIC_API_URL: http://localhost:5000/api
+    ports:
+      - "3000:3000"
+    depends_on:
+      backend:
+        condition: service_healthy
+
+volumes:
+  contact_data:

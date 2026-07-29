@@ -1,0 +1,11 @@
+{
+  "name": "Campo Escola Digital (PCED)",
+  "eyebrow": "Pesquisa aplicada · Gêmeos digitais",
+  "problem": "A formação e a inovação na indústria de óleo e gás se beneficiam de ambientes seguros e conectados para explorar operações, dados e cenários complexos.",
+  "proposal": "Desenvolver um ecossistema digital de aprendizagem e inovação que articula ambientes virtuais, dados reais, simulações e visualização de informações.",
+  "technologies": ["Unity", "C#", "Python", "Dados públicos da ANP", "Dashboards"],
+  "digitalTwins": "A pesquisa investiga como representações virtuais, dados e simulações podem apoiar estudo, experimentação e desenvolvimento no contexto industrial.",
+  "research": "O projeto aproxima pesquisa, desenvolvimento, inovação e formação de estudantes sem expor informações internas ou confidenciais.",
+  "participation": ["Pesquisa", "Escrita de Artigos", "Análise Exploratória de Dados", "Ciência de Dados", "Machine Learning"],
+  "recognition": "Menção honrosa no Bahia Oil & Gas Energy 2026"
+}

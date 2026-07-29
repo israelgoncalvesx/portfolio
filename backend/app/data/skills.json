@@ -1,0 +1,6 @@
+[
+  {"category": "Linguagens", "items": ["Python", "SQL"]},
+  {"category": "Dados e Machine Learning", "items": ["Pandas", "NumPy", "Matplotlib", "Scikit-learn", "Estatística básica", "Machine Learning", "Análise Exploratória de Dados", "Jupyter Notebook"]},
+  {"category": "Back-end", "items": ["Flask", "FastAPI", "Docker"]},
+  {"category": "Cloud e ferramentas", "items": ["AWS EC2", "Git", "GitHub"]}
+]

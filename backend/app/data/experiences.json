@@ -1,0 +1,8 @@
+[
+  {"year": "2026", "title": "Iniciação Científica — Campo Escola Digital", "description": "Pesquisa e desenvolvimento com ambientes virtuais, dados, simulações e gêmeos digitais.", "type": "Pesquisa"},
+  {"year": "2026", "title": "Menção honrosa — Bahia Oil & Gas Energy", "description": "Reconhecimento concedido ao projeto Campo Escola Digital.", "type": "Reconhecimento"},
+  {"year": "2026", "title": "AWS Cloud Club — SENAI CIMATEC", "description": "Atuação como Gerente de Mídias Sociais.", "type": "Comunidade"},
+  {"year": "2025", "title": "1º lugar — GameJam SEMCOMP", "description": "Jogo 2D desenvolvido em Unity durante a competição.", "type": "Conquista"},
+  {"year": "2025 — em andamento", "title": "Engenharia da Computação", "description": "Graduação na Universidade SENAI CIMATEC.", "type": "Formação"},
+  {"year": "Em andamento", "title": "Comunidades de tecnologia", "description": "Participação no setor de projetos de um clube de programação e na administração do Clube de Cibersegurança SENAI CIMATEC.", "type": "Comunidade"}
+]
