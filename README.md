@@ -169,6 +169,16 @@ pytest
 
 Em produção, configure HTTPS, URL pública da API, CORS restrito ao domínio final e armazenamento persistente. Para receber contatos em escala, substitua o JSONL por PostgreSQL e um provedor de e-mail transacional configurado explicitamente.
 
+### Deploy recomendado: Render + Vercel
+
+1. No Render, crie um Blueprint a partir deste repositório. O arquivo `render.yaml` cria a API Flask e solicita `RESEND_API_KEY` e `CORS_ORIGINS` sem armazená-los no Git.
+2. Em `CORS_ORIGINS`, informe a URL pública do front-end na Vercel.
+3. Na Vercel, importe o mesmo repositório e selecione `frontend` como Root Directory.
+4. Configure `NEXT_PUBLIC_API_URL` e `INTERNAL_API_URL` com a URL da API Render seguida de `/api`.
+5. Configure `NEXT_PUBLIC_SITE_URL` com a URL de produção da Vercel.
+
+Novos commits na branch `main` passam a disparar deploys automáticos nas duas plataformas.
+
 ## Checklist antes de publicar
 
 - [ ] Substituir o PDF provisório pelo currículo final
