@@ -18,7 +18,7 @@ export function Projects({ projects, githubUrl }: { projects: Project[]; githubU
     <section id="projetos" className="section bg-sand">
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-col justify-between gap-7 lg:flex-row lg:items-end">
-          <SectionTitle eyebrow="Projetos selecionados" title="Aprendizado que ganha forma." text="Uma área preparada para documentar repositórios, decisões técnicas e resultados verificáveis — sem inflar o que ainda está em construção." />
+          <SectionTitle eyebrow="Projetos selecionados" title="Aprendizado que ganha forma." text="Projetos construídos para transformar estudo em prática, com decisões técnicas, código aberto e resultados verificáveis." />
           <a href={githubUrl} target="_blank" rel="noopener noreferrer" className="button button-secondary shrink-0"><Github size={18} /> Ver no GitHub <ArrowUpRight size={16} /></a>
         </div>
         <div className="mt-10 flex gap-2 overflow-x-auto pb-3" aria-label="Filtrar projetos">

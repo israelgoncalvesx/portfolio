@@ -1,19 +1,5 @@
 [
   {
-    "id": "titanic-eda",
-    "name": "Análise Exploratória do Titanic",
-    "summary": "Espaço reservado para uma análise exploratória do conjunto de dados Titanic. Substitua esta descrição pelas decisões, perguntas e descobertas reais do projeto.",
-    "technologies": ["Python", "Pandas", "Matplotlib"],
-    "image": "/projects/placeholder-data.svg",
-    "category": "Ciência de Dados",
-    "repositoryUrl": null,
-    "demoUrl": null,
-    "status": "Conteúdo de exemplo",
-    "highlights": ["Preparado para documentar limpeza de dados", "Espaço para registrar visualizações e conclusões"],
-    "period": "A definir",
-    "placeholder": true
-  },
-  {
     "id": "campo-escola-digital",
     "name": "Campo Escola Digital",
     "summary": "Projeto acadêmico de ecossistema digital para aprendizagem e inovação na indústria de óleo e gás, com ambientes virtuais, dados, simulações e gêmeos digitais.",
@@ -28,31 +14,17 @@
     "placeholder": true
   },
   {
-    "id": "machine-learning",
-    "name": "Projeto de Machine Learning",
-    "summary": "Placeholder para um futuro projeto de aprendizado de máquina. Inclua aqui o problema, a metodologia e resultados verificáveis quando o repositório estiver disponível.",
-    "technologies": ["Python", "Scikit-learn", "Pandas"],
-    "image": "/projects/placeholder-ml.svg",
+    "id": "titanic-machine-learning",
+    "name": "Titanic: Machine Learning from Disaster",
+    "summary": "Projeto de classificação que transforma a análise exploratória do Titanic em um pipeline reproduzível de treinamento e inferência para prever a sobrevivência de passageiros.",
+    "technologies": ["Python", "Pandas", "Scikit-learn", "Jupyter Notebook", "Joblib"],
+    "image": "/projects/titanic-machine-learning.svg",
     "category": "Machine Learning",
-    "repositoryUrl": null,
+    "repositoryUrl": "https://github.com/israelgoncalvesx/titanic-machine-learning-from-disaster",
     "demoUrl": null,
-    "status": "Conteúdo de exemplo",
-    "highlights": ["Estrutura pronta para métricas reais", "Espaço para explicar preparação e validação"],
-    "period": "A definir",
-    "placeholder": true
-  },
-  {
-    "id": "flask-data-api",
-    "name": "API Flask para análise de dados",
-    "summary": "Placeholder para uma API de análise de dados com Flask. Atualize com endpoints e funcionalidades reais após a implementação.",
-    "technologies": ["Python", "Flask", "Docker"],
-    "image": "/projects/placeholder-api.svg",
-    "category": "Back-end",
-    "repositoryUrl": null,
-    "demoUrl": null,
-    "status": "Conteúdo de exemplo",
-    "highlights": ["Arquitetura REST a documentar", "Preparado para testes e containerização"],
-    "period": "A definir",
-    "placeholder": true
+    "status": "Em desenvolvimento",
+    "highlights": ["81,56% de acurácia em 179 passageiros de validação", "Engenharia de atributos com FamilySize e IsAlone", "Pipeline salvo para treinamento e inferência consistentes"],
+    "period": "2026 — em andamento",
+    "placeholder": false
   }
 ]
