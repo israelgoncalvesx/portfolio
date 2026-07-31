@@ -16,7 +16,7 @@
   {
     "id": "titanic-machine-learning",
     "name": "Titanic: Machine Learning from Disaster",
-    "summary": "Projeto de classificação que transforma a análise exploratória do Titanic em um pipeline reproduzível de treinamento e inferência para prever a sobrevivência de passageiros.",
+    "summary": "Solução de Machine Learning que prevê a sobrevivência de passageiros do Titanic, reunindo análise de dados, pipeline reproduzível, aplicação Streamlit, dashboard interativo e API FastAPI.",
     "technologies": ["Python", "Pandas", "Scikit-learn", "Jupyter Notebook", "Joblib"],
     "image": "/projects/titanic-machine-learning.svg",
     "category": "Machine Learning",
