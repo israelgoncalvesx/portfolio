@@ -22,9 +22,9 @@
     "category": "Machine Learning",
     "repositoryUrl": "https://github.com/israelgoncalvesx/titanic-machine-learning-from-disaster",
     "demoUrl": null,
-    "status": "Em desenvolvimento",
+    "status": "Concluído",
     "highlights": ["Aplicação Streamlit publicada com previsões e dashboard interativo", "81,56% de acurácia no conjunto de validação", "API FastAPI com validação de dados e testes automatizados"],
-    "period": "2026 — em andamento",
+    "period": "2026",
     "placeholder": false
   }
 ]
