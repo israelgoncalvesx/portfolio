@@ -26,5 +26,19 @@
     "highlights": ["Aplicação Streamlit publicada com previsões e dashboard interativo", "81,56% de acurácia no conjunto de validação", "API FastAPI com validação de dados e testes automatizados"],
     "period": "2026",
     "placeholder": false
+  },
+  {
+    "id": "exopredict-cloud",
+    "name": "ExoPredict Cloud",
+    "summary": "Projeto de ciência de dados e Machine Learning para analisar objetos de interesse do telescópio Kepler e classificá-los como exoplanetas confirmados, candidatos ou falsos positivos.",
+    "technologies": ["Python", "SQLite", "Pandas", "Scikit-learn", "Cloud"],
+    "image": "/projects/exopredict-cloud.svg",
+    "category": "Machine Learning",
+    "repositoryUrl": "https://github.com/israelgoncalvesx/exopredict-cloud",
+    "demoUrl": null,
+    "status": "Em desenvolvimento",
+    "highlights": ["Catálogo Kepler Objects of Interest com 9.564 registros", "Pipeline planejado da ingestão de dados à publicação em nuvem", "Classificação entre exoplanetas confirmados, candidatos e falsos positivos"],
+    "period": "2026 — em andamento",
+    "placeholder": false
   }
 ]

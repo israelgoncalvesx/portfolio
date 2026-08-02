@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="title description">
+  <title id="title">ExoPredict Cloud</title>
+  <desc id="description">Ilustração de um exoplaneta sendo analisado por órbitas, pontos de dados e um modelo de classificação.</desc>
+  <defs>
+    <linearGradient id="space" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#182A27"/>
+      <stop offset="1" stop-color="#566747"/>
+    </linearGradient>
+    <radialGradient id="planet" cx="35%" cy="30%" r="75%">
+      <stop offset="0" stop-color="#F3E9DC"/>
+      <stop offset=".48" stop-color="#D8C3A5"/>
+      <stop offset="1" stop-color="#B3785A"/>
+    </radialGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+  <rect width="960" height="540" fill="url(#space)"/>
+  <g fill="#F3E9DC">
+    <circle cx="105" cy="166" r="3" opacity=".75"/>
+    <circle cx="173" cy="244" r="5" opacity=".4"/>
+    <circle cx="252" cy="121" r="3" opacity=".6"/>
+    <circle cx="355" cy="188" r="4" opacity=".35"/>
+    <circle cx="716" cy="118" r="4" opacity=".7"/>
+    <circle cx="840" cy="190" r="3" opacity=".45"/>
+    <circle cx="785" cy="378" r="5" opacity=".35"/>
+    <circle cx="124" cy="404" r="4" opacity=".55"/>
+  </g>
+  <g transform="translate(505 292)">
+    <circle r="118" fill="#D8C3A5" opacity=".18" filter="url(#glow)"/>
+    <circle r="96" fill="url(#planet)"/>
+    <path d="M-88-20C-40-3 22-42 88-15M-86 27C-24 48 28 4 80 25M-55 68C-9 48 22 72 50 61" fill="none" stroke="#66734F" stroke-width="12" stroke-linecap="round" opacity=".65"/>
+    <ellipse rx="184" ry="50" fill="none" stroke="#F3E9DC" stroke-width="5" transform="rotate(-14)" opacity=".75"/>
+    <circle cx="-155" cy="27" r="9" fill="#B3785A"/>
+  </g>
+  <g fill="none" stroke="#D8C3A5" stroke-width="3" opacity=".42">
+    <path d="M72 348L155 304L225 326L304 258L372 279"/>
+    <path d="M72 382H365M72 314H365"/>
+  </g>
+  <g fill="#F3E9DC">
+    <circle cx="155" cy="304" r="6"/>
+    <circle cx="225" cy="326" r="6"/>
+    <circle cx="304" cy="258" r="6"/>
+    <circle cx="372" cy="279" r="6"/>
+  </g>
+  <g transform="translate(704 310)">
+    <rect width="174" height="112" rx="20" fill="#F3E9DC" opacity=".94"/>
+    <circle cx="31" cy="31" r="8" fill="#66734F"/>
+    <path d="M52 31H140M31 57H140M31 82H112" stroke="#3A2F2A" stroke-width="8" stroke-linecap="round" opacity=".7"/>
+    <circle cx="145" cy="82" r="12" fill="#B3785A"/>
+  </g>
+  <g font-family="Arial, sans-serif" fill="#F3E9DC">
+    <text x="64" y="74" font-size="22" font-weight="700" letter-spacing="4">EXOPREDICT CLOUD</text>
+    <text x="64" y="108" font-size="16" opacity=".72">Kepler data · machine learning · cloud</text>
+  </g>
+</svg>
