@@ -8,6 +8,8 @@ import { Reveal, SectionTitle } from "./ui";
 
 type State = { kind: "idle" | "loading" | "success" | "error"; message: string };
 
+const COLD_START_HINT_DELAY_MS = 4000;
+
 export function Contact({ socials }: { socials: SocialLink[] }) {
   const [state, setState] = useState<State>({ kind: "idle", message: "" });
   async function submit(event: FormEvent<HTMLFormElement>) {
@@ -15,6 +17,9 @@ export function Contact({ socials }: { socials: SocialLink[] }) {
     const form = event.currentTarget;
     if (!form.reportValidity()) return;
     setState({ kind: "loading", message: "Enviando..." });
+    const hintTimer = setTimeout(() => {
+      setState({ kind: "loading", message: "Ainda enviando... o servidor pode levar até 30s para acordar." });
+    }, COLD_START_HINT_DELAY_MS);
     const data = Object.fromEntries(new FormData(form).entries()) as Record<string, string>;
     try {
       const result = await sendContact(data);
@@ -22,6 +27,8 @@ export function Contact({ socials }: { socials: SocialLink[] }) {
       form.reset();
     } catch (error) {
       setState({ kind: "error", message: error instanceof Error ? error.message : "Não foi possível enviar." });
+    } finally {
+      clearTimeout(hintTimer);
     }
   }
   return (
