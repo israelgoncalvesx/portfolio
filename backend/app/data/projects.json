@@ -36,9 +36,9 @@
     "category": "Machine Learning",
     "repositoryUrl": "https://github.com/israelgoncalvesx/exopredict-cloud",
     "demoUrl": null,
-    "status": "Em desenvolvimento",
-    "highlights": ["Catálogo Kepler Objects of Interest com 9.564 registros", "Pipeline planejado da ingestão de dados à publicação em nuvem", "Classificação entre exoplanetas confirmados, candidatos e falsos positivos"],
-    "period": "2026 — em andamento",
+    "status": "Concluído",
+    "highlights": ["Catálogo Kepler Objects of Interest com 9.564 registros", "Pipeline completo da ingestão de dados à publicação em nuvem", "Classificação entre exoplanetas confirmados, candidatos e falsos positivos"],
+    "period": "2026",
     "placeholder": false
   }
 ]
